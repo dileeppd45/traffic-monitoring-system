@@ -1,0 +1,180 @@
+
+<html lang="en">
+
+  <head>
+    <title>TRAFFIC MONITOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../static/statics/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/statics/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../static/statics/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../static/statics/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/statics/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/statics/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../static/statics/css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../static/statics/css/style.css">
+
+  </head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.center{
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+}
+</style>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="#">TRAFFIC MONITORING SYSTEM</a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+
+
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li ><a href="/" class="nav-link">Home</a></li>
+                  <li class="active"><a href="#login" class="nav-link">Login</a></li>
+                </ul>
+              </nav>
+            </div>
+
+
+          </div>
+        </div>
+
+      </header>
+
+      <div class="ftco-blocks-cover-1">
+      <div class="ftco-cover-1 overlay" style="background-image: url('../static/statics/images/trafficpolice.jpg')">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <h1 class="line-bottom">EASY TO MONITOR AND MAINTAIN ROAD TRAFFICS</h1>
+            </div>
+            <div class="col-lg-5 ml-auto">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container" align="center" style=" min-height:50vh; margin-top:100px; margin-bottom: 75px;">
+
+    <section id="login">
+      <form action="../login" method="post">
+        {% csrf_token %}
+        <h2 class="text-success center"><b style="color:gold;">TRAFFIC MONITOR</b><br>Admin Login</h2>
+        <div class="center">
+          <table>
+          <tr><label  class="text-success" style="float:left; padding-left:15px;"><b>Admin Id :</b></label></tr>
+          <tr><input type="text" placeholder="Enter Id" name="name" required></tr>
+
+          <tr><label  class="text-success" style="float:left; padding-left:15px;"><b>Password :</b></label></tr>
+          <tr><input type="password" placeholder="Enter Password" name="password" required></tr>
+
+          <tr><button type="submit" class="btn btn-success">Login</button></tr>
+          </table>
+        </div>
+      </form>
+    </section>
+</div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 pr-md-5 mr-auto">
+            <h2 class="line-bottom">It build a secured, robust Traffic Monitoring System where all traffic is monitored properly.</h2>
+            <p>maintains the record of routes, traffic police detail, vehicle’ detail efficiently so that it would be easy to access at any time 24*7.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script><br> All rights reserved <br> This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank" >TRAFFIC MONITOR</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="../static/statics/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/statics/js/popper.min.js"></script>
+    <script src="../static/statics/js/bootstrap.min.js"></script>
+    <script src="../static/statics/js/owl.carousel.min.js"></script>
+    <script src="../static/statics/js/jquery.sticky.js"></script>
+    <script src="../static/statics/js/jquery.waypoints.min.js"></script>
+    <script src="../static/statics/js/jquery.animateNumber.min.js"></script>
+    <script src="../static/statics/js/jquery.fancybox.min.js"></script>
+    <script src="../static/statics/js/jquery.easing.1.3.js"></script>
+    <script src="../static/statics/js/bootstrap-datepicker.min.js"></script>
+    <script src="../static/statics/js/aos.js"></script>
+
+    <script src="../static/statics/js/main.js"></script>
+
+  </body>
+
+</html>

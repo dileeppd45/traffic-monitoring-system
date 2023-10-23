@@ -1,0 +1,37 @@
+{% extends 'traffic/index.html'%}
+{% block content %}
+<div style="min-height:80vh; margin-top:20vh;">
+<div class="card" style="margin-left:100px; min-height:550px;" >
+                  <div class="card-body">
+                    <center><br><br>
+
+                    </center><br><br>
+                      <div class="table-responsive">
+                          <center> <h2 class="card-title">VIEW PROFILE</h2></center><br>
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                              <th><h5>NAME</h5></th>
+                              <th><h5>ADDRESS</h5></th>
+                              <th><h5>EMAIL</h5></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+
+                              <td><h5>{{data.2}}</h5></td>
+                              <td><h5>{{data.4}}</h5></td>
+                              <td><h5>{{data.3}}</h5></td>
+                              <td><a href="../update_profile"><div class="badge badge-outline-warning">Update profile</div></a></td>
+                              <td><a href="../change_password"><div class="badge badge-outline-warning">Change password</div></a></td>
+
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+</div>
+</div>
+{% endblock %}

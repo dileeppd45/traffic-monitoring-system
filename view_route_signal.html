@@ -1,0 +1,45 @@
+{% extends 'traffic/index.html'%}
+{% block content %}
+<div style="min-height:80vh; margin-top:10vh;">
+<div class="card" style="margin-left:100px; min-height:550px;" >
+                  <div class="card-body">
+                    <center><br><br>
+
+                    </center><br><br>
+                      <div class="table-responsive">
+                          <center> <h2 class="card-title">VIEW SIGNAL</h2></center><br>
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                              <th><h5>No.</h5></th>
+                              <th><h5>SIGNAL PLACE</h5></th>
+                              <th  colspan="2"><h5></h5></th>
+                              <th colspan="2"><h5></h5></th>
+                              <th colspan="2"><h5></h5></th>
+
+                          </tr>
+                        </thead>
+                        {% for i in data %}
+                        <tbody>
+                          <tr>
+                              <td ><h5>{{ forloop.counter }}</h5></td>
+                              <td><h5>{{i.2}}</h5></td>
+                              <td><a href="../allocate_staff/{{i.0}}"><div class="badge badge-outline-warning">Allocate Staff</div></a></td>
+                              <td><a href="../view_allocated_staff/{{i.0}}"><div class="badge badge-outline-warning">Staffs</div></a></td>
+                              <td><a href="../add_fine/{{i.0}}">Add Fine</a></td>
+                              <td><a href="../view_fine/{{i.0}}">View Fine</a></td>
+                              <td><a href="../location/{{i.3}}/{{i.4}}"><span class="glyphicon glyphicon-pencil" >location</span></a></td>
+                              <td><a href="../edit_signal/{{i.0}}">edit</a></td>
+                              <td><a href="../delete_signal/{{i.0}}" style="color:red;">delete</a></td>
+
+
+                          </tr>
+                        </tbody>
+                        {% endfor %}
+                      </table>
+                    </div>
+                  </div>
+</div>
+</div>
+{% endblock %}

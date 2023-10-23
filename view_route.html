@@ -1,0 +1,38 @@
+{% extends 'traffic/index.html'%}
+{% block content %}
+<div style="min-height:80vh; margin-top:20vh;">
+<div class="card" style="margin-left:100px; min-height:550px;" >
+                  <div class="card-body">
+                    <center><br><br>
+
+                    </center><br><br>
+                      <div class="table-responsive">
+                          <center> <h2 class="card-title">VIEW ROUTE</h2></center><br>
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                              <th><h5>No.</h5></th>
+                              <th><h5>STARTING PLACE</h5></th>
+                              <th><h5>DESTINATION</h5></th>
+                          </tr>
+                        </thead>
+                        {% for i in data %}
+                        <tbody>
+                          <tr>
+                              <td><h5>{{ forloop.counter }}</h5></td>
+                              <td><h5>{{i.1}}</h5></td>
+                              <td><h5>{{i.2}}</h5></td>
+                              <td><a href="../add_route_signal/{{i.0}}"><div class="badge badge-outline-warning">Add Signal</div></a></td>
+                              <td><a href="../view_route_signal/{{i.0}}"><div class="badge badge-outline-warning">View Signal</div></a></td>
+                              <td><a href="../delete_route/{{i.0}}"><div class="badge badge-outline-warning" style="color:red;">Delete Route</div></a></td>
+                          </tr>
+                        </tbody>
+                        {% endfor %}
+                      </table>
+                    </div>
+                  </div>
+</div>
+    </div>
+
+{% endblock %}
