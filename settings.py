@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'NAME': 'traffic_monitoring',
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'agosh',
+        'USER': '#####',
         'PASSWORD': '######',
         'HOST': '103.39.135.171',
         'PORT': '3306',
